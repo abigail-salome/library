@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample Library</title>
+    <h1>Book Library</h1>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <button id="add-new-book">Add New Book</button>
+    <div id="form-container" class="hidden">
+      <form id="book-form">
+        <label>
+          Title:
+          <input type="text" id="title" required />
+        </label>
+        <br />
+        <label>
+          Author:
+          <input type="text" id="author" required />
+        </label>
+        <br />
+        <label>
+          Pages:
+          <input type="text" id="pages" required />
+        </label>
+        <br />
+        <button type="submit">Add Book</button>
+        <button type="button" id="cancel">Cancel</button>
+      </form>
+    </div>
+    <div id="container"></div>
+
+    <script src="index.js"></script>
+  </body>
 </html>
